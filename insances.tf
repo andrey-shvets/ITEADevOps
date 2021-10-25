@@ -1,17 +1,5 @@
-data "aws_ami" "ubuntu" {
-  most_recent = true
-
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu*"]
-  }
-
-
-  owners = ["amazon"]
-}
-
 resource "aws_instance" "web" {
-  ami = data.aws_ami.ubuntu.id
+  ami = "ami-05f7491af5eef733a"
   instance_type = "t3.micro"
 
   tags = {
