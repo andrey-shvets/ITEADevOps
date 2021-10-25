@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "bucketMcBucketface" {
   acl    = "private"
 
   tags = {
-    Name        = "Phteven"
+    Name        = "I hope no one used the name Phteven for a bucket"
     Environment = "Dev"
   }
 }
