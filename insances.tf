@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_s3_bucket" "bucketMcBucketface" {
-  bucket = "my-tf-test-bucket"
+  bucket = "i-think-error-was-about-this-bucket-name"
   acl    = "private"
 
   tags = {
