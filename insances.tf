@@ -6,3 +6,13 @@ resource "aws_instance" "web" {
     Name = "aws_itea_instance"
   }
 }
+
+resource "aws_s3_bucket" "bucketMcBucketface" {
+  bucket = "my-tf-test-bucket"
+  acl    = "private"
+
+  tags = {
+    Name        = "Phteven"
+    Environment = "Dev"
+  }
+}
