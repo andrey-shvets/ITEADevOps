@@ -10,7 +10,6 @@ terraform {
 
   backend "remote" {
     organization = "itea-devops"
-
     workspaces {
       name = "IteaDevOps"
     }
@@ -20,5 +19,3 @@ terraform {
 provider "aws" {
   region = "eu-central-1"
 }
-
-
